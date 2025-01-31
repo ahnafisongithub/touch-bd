@@ -1,0 +1,6 @@
+---
+deployment:
+  tasks:
+    - export DEPLOY_PATH=/home/touchbdc/public_html
+    - /bin/cp -rf preproduction/main/* $DEPLOY_PATH
+    - echo "Deployment complete!" 
